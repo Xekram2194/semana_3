@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios de Viajes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/sesion_12.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/sesion_15.css">
+    <script src="js/sesion_12.js"></script>
+    <script src="js/sesion_15.js"></script>
+    
+</head>
+<body onload="datos();">
+    <div class="container">
+        <div class="datos">
+            <div class="nombre">
+                <h2>los viajes de</h2>
+                <h2> <a href="sesion_15_1.html" class="name"> <span id="txtnombre" name="txtnombre" ></span></a></h2>
+            </div>
+            <div class="row">
+                <div class="column">
+                  <img alt="photo 1" src="img/travel/1.jpg"/>
+                  <img alt="photo 2" src="img/travel/2.jpg"/>
+                  <img alt="photo 3" src="img/travel/3.jpg"/>
+                  <img alt="photo 4" src="img/travel/4.jpg"/>
+                </div>
+              
+                <div class="column">
+                  <img alt="photo 2" src="img/travel/5.jpg"/>
+                  <img alt="photo 3" src="img/travel/6.jpg"/>
+                  <img alt="photo 4" src="img/travel/7.jpg"/>
+                  <img alt="photo 1" src="img/travel/1.jpg"/>
+                </div>
+              
+                <div class="column">
+                   <img alt="photo 3" src="img/travel/3.jpg"/>
+                  <img alt="photo 2" src="img/travel/2.jpg"/>
+                  <img alt="photo 4" src="img/travel/4.jpg"/>
+                  <img alt="photo 1" src="img/travel/1.jpg"/>
+                </div>
+              </div>
+        </div>
+    </div>
+</body>
+<script>
+    var url_string = window.location.href; 
+    var url = new URL(url_string);
+    var c = url.searchParams.get("name");
+    console.log(c)
+    document.getElementById("txtnombre").innerHTML = c;
+</script>
+</html>

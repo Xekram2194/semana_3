@@ -1,0 +1,92 @@
+body{
+    background-color: #85929E;
+    font-family: 'Poor Story', cursive;
+}
+.container{
+    margin-top: 50px;
+    width: 1200px;
+}
+.nombre{
+    padding: 15px;
+    margin: 10px auto ;
+    width: 60%;
+    border-radius: 20px;
+    background-color: #2C3E50;
+}
+h2{
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+.nombre h2 a{
+    text-decoration: none;
+    color:#fff
+}
+.algomas{
+    padding: 15px;
+    margin: 0 auto 15px auto;
+    width: 60%;
+    border-radius: 20px;
+    background-color: #808B96;
+}
+.algomas p{
+    text-align: center;
+    color:   #fff;
+}
+.botones{
+    padding-top: 20px ;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 15px;
+
+}
+.btn{
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #2C3E50;
+    color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+}
+img{
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+.column{
+    flex: 25%;
+    padding: 5px;
+}
+
+.column img{
+    margin-top: 5px;
+}
+
+@media (max-width: 800px){
+    .column{
+        flex: 50%;
+    }
+}
+
+@media (max-width: 600px){
+    .column{
+        flex: 100%;
+    }
+}
+.name{
+    text-decoration: none;
+    color: #fff;
+}
+.inputHead a{
+    text-decoration: none;
+    margin: 2px;
+}
+.nuevo{
+    margin: 10px;
+}
