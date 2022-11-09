@@ -1,0 +1,50 @@
+.relojCs{
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+    text-align: center;
+}
+.reloj{
+    width: 150px;
+    height: 30px;
+    padding: 5px 10px;
+    border: 1px solid #000;
+    font: bold 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    float: right;
+    margin: 1em 3em 1em 1em;
+}
+/*imagenes*/
+
+img{
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+.column{
+    flex: 25%;
+    padding: 5px;
+}
+
+.column img{
+    margin-top: 5px;
+}
+
+@media (max-width: 800px){
+    .column{
+        flex: 50%;
+    }
+}
+
+@media (max-width: 600px){
+    .column{
+        flex: 100%;
+    }
+}
